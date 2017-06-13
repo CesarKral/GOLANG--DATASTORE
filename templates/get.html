@@ -1,0 +1,23 @@
+{{define "get"}}
+{{template "header" .}}
+<div class="content">
+    <h2>Get</h2>
+    <div>This is the Get page</div>
+    <form action="/get" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" value = {{.Name}} ><br>
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age" value = {{.Age}} ><br>
+        <label for="car">Car</label>
+        <input type="text" name="car" id="car" value = {{.Car}} ><br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" ><br>
+        <input type="submit" value="Get register">
+    </form>
+        <br>
+    <a href="/update">Update</a>
+    <a href="/create">Create</a>
+    <a href="/delete">Delete</a>
+</div>
+{{template "footer" .}}
+{{end}}

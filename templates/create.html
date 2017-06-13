@@ -1,0 +1,23 @@
+{{define "create"}}
+{{template "header" .}}
+<div class="content">
+    <h2>Create</h2>
+    <div>This is the Create page</div>
+    <form action="/create" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" ><br>
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age" ><br>
+        <label for="car">Car</label>
+        <input type="text" name="car" id="car" ><br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" ><br>
+        <input type="submit" value="Create register">
+    </form>
+    <br>
+    <a href="/update">Update</a>
+    <a href="/get">Get</a>
+    <a href="/delete">Delete</a>
+</div>
+{{template "footer" .}}
+{{end}}

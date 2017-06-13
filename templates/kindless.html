@@ -1,0 +1,14 @@
+{{define "kindless"}}
+{{template "header" .}}
+<div class="content">
+    <h2>Kindless</h2>
+    <div>This is the Kindless page</div>
+    <form action="/kindless" method="post">
+        <input type="submit" value="Kindless register">
+    </form>
+    {{range .}}
+    <li>{{.}}</li>
+    {{end}}
+</div>
+{{template "footer" .}}
+{{end}}

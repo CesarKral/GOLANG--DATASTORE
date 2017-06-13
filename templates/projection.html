@@ -1,0 +1,11 @@
+{{define "projection"}}
+{{template "header" .}}
+<div class="content">
+    <h2>Projection</h2>
+    <div>This is the Projection page</div>
+    {{range .}}
+    <li>{{.Car}}</li>
+    {{end}}
+</div>
+{{template "footer" .}}
+{{end}}

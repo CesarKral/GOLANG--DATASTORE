@@ -1,0 +1,8 @@
+{{define "upload"}}
+{{template "header" .}}
+<form action="/upload" enctype="multipart/form-data" method="POST">
+    Photo: <input type="file"  id="filedata" name="filedata">
+    <input	type="submit"	value="Upload Photo">
+</form>
+{{template "footer" .}}
+{{end}}

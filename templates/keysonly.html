@@ -1,0 +1,11 @@
+{{define "keysonly"}}
+{{template "header" .}}
+<div class="content">
+    <h2>Keys Only</h2>
+    <div>This is the Keys Only page</div>
+    {{range .}}
+    <li>{{.}}</li>
+    {{end}}
+</div>
+{{template "footer" .}}
+{{end}}

@@ -1,0 +1,23 @@
+{{define "delete"}}
+{{template "header" .}}
+<div class="content">
+    <h2>Delete</h2>
+    <div>This is the Delete page</div>
+    <form action="/delete" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" ><br>
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age" ><br>
+        <label for="car">Car</label>
+        <input type="text" name="car" id="car" ><br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" ><br>
+        <input type="submit" value="Delete register">
+    </form>
+        <br>
+    <a href="/update">Update</a>
+    <a href="/create">Create</a>
+    <a href="/get">Get</a>
+</div>
+{{template "footer" .}}
+{{end}}

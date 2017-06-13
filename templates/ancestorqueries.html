@@ -1,0 +1,14 @@
+{{define "ancestorqueries"}}
+{{template "header" .}}
+<div class="content">
+    <h2>Ancestor Queries</h2>
+    <div>This is the Ancestor Queries page</div>
+    <form action="/ancestorqueries" method="post">
+        <input type="submit" value="Ancestor queries register">
+    </form>
+    {{range .}}
+    <li>{{.Name}}</li>
+    {{end}}
+</div>
+{{template "footer" .}}
+{{end}}
